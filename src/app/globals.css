@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 232, 230, 227;
+  --background-rgb: 0, 0, 0;
+}
+
+/*@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}*/
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #18181b;
+}
+
+/* Gradient background:
+background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb))
+*/
+
+@layer base {
+  p > a {
+    @apply text-primary;
+  }
+  p > a:hover {
+    @apply text-secondary;
+    @apply underline;
+  }
+}

@@ -1,0 +1,7 @@
+CREATE TABLE articles (index SERIAL, id UUID, title VARCHAR(255), image UUID, author UUID, category VARCHAR(255), created TIMESTAMP, modified TIMESTAMP, body TEXT, published BOOLEAN);
+INSERT INTO articles VALUES();
+
+CREATE TABLE persons (id UUID, first VARCHAR(255), last VARCHAR(255), avatar UUID);
+INSERT INTO persons ('98ac446a-88c9-48a2-8135-a80fbbcac11b', 'Ahmed', 'Abdulla', '206e0b9a-c760-4cb8-966c-b84a1dce378c');
+
+CREATE TABLE images (id UUID, width SMALLINT, length SMALLINT, type VARCHAR(255));
