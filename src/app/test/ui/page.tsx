@@ -1,4 +1,4 @@
-import {Button} from '@/common/components/Button';
+import {Button} from '@/common/components/ui/Button';
 
 export default function Ui() {
 

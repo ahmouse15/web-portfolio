@@ -50,9 +50,9 @@ function Post({post}: {post: Post}) {
                         <div className='flex justify-between py-1'>
                             <p className='author-card'>By Test</p>
                             
-                            {post.feature_image && post.feature_image_alt && 
+                            { post.feature_image && post.feature_image_alt &&
                             <Image src={post.feature_image} placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`} width={1024} height={1024} alt={post.feature_image_alt}></Image> }
-                            
+                            {/*@ts-ignore toLocaleString has a bug with wrong types*/}
                             <p>{new Date(post.published_at).toLocaleString("en-US", dateOptions)}</p>
                         </div>
                     </div>

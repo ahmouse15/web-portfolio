@@ -1,5 +1,5 @@
 //API wrapper for ghost CMS backend
-import { TSGhostContentAPI } from "@ts-ghost/content-api";
+import { Post, TSGhostContentAPI } from "@ts-ghost/content-api";
 import { UUID } from "crypto";
 
 // Create API instance with site credentials
@@ -20,7 +20,7 @@ export async function getPosts(limit?: number) {
     else return null;
 }
 
-export async function readPost(slug: string) {
+export async function readPost(slug: string): Promise<Post | null> {
   let result = await api.posts
     .read({
       slug: slug
