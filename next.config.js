@@ -8,7 +8,11 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'srv498043.hstgr.cloud',
+                hostname: 'ahmouse.dev',
+            },
+            {
+                protocol: 'https',
+                hostname: '*.unsplash.com',
             }
         ]
     }

@@ -19,7 +19,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'body': 'url("/background.jpg")',
+        'body': 'url("/bg.svg")',
         },
       borderWidth: {
         sm: '1px',
