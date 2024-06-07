@@ -8,13 +8,13 @@ export default async function Posts() {
   let count = 0;
   let posts: Post[] = [];
 
-  let payload = await getPosts(2); //Load two items at a time
+  let payload = await getPosts(3); //Load three items at a time
   if (!payload) notFound();
 
   posts = posts.concat(payload);
 
   const postList = 
-    <ul className="list-disc list-outside marker:text-blue-500">
+    <ul className="//list-disc //list-outside //marker:text-orange-500">
       <Suspense>
         {posts.map(post => <li key={post.slug}><PostPreview key={post.slug} slug={post.slug}/></li>)}
       </Suspense>
