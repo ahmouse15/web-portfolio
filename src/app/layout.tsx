@@ -26,8 +26,8 @@ function Search() {
 function Navigation() {
 return [
   
-      <Hamburger/>,
-      <div className="pr-[5%] justify-end items-center hidden md:inline-flex">
+      <Hamburger key="hamburger-menu" />,
+      <div key="nav-items-wrapper" className="pr-[5%] justify-end items-center hidden md:inline-flex">
         <Nav/>
       </div>
   
