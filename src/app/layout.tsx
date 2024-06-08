@@ -23,6 +23,17 @@ function Search() {
 
 }
 
+function Navigation() {
+return [
+  
+      <Hamburger/>,
+      <div className="pr-[5%] justify-end items-center hidden md:inline-flex">
+        <Nav/>
+      </div>
+  
+]
+}
+
 function Header() {
   return (
     <div className="topbar-wrapper z-40 sticky top-0 py-2 max-h-96 border-b border-ghost bg-ghost-light/30 backdrop-blur-sm drop-shadow">
@@ -48,10 +59,7 @@ function Header() {
         <div>
 
         </div>
-        <Hamburger/>
-        <div className="pr-[5%] justify-end items-center hidden md:inline-flex">
-          <Nav/>
-        </div>
+        {/* Insert Navigation here */}
       </div>
     </div>
   );
