@@ -25,27 +25,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Design
 2-page design:\
-**Blog** will be just that, a blog with posts such as tutorials for difficult issues, or dev explanations on how I tackled a problem.\
-**Showcase** will be more creative, with fancy animations and designs used to showcase other projects that I have worked on.
+**Blog** containing tutorials for difficult issues, or dev explanations on how I tackled different problems.\
+**Showcase** will show off some of my skills, including projects I've worked on, what I learned from them, and the tools I used
 
 It will be hosted on ahmouse.com
 
 ## TODO
- - ~~First thing: Use QuillJS for text editor, and quill-delta-to-html to store it in the db~~ See #1
- - ~~Finish Article page~~ See  #2
- - Minimalist design for nav bar (e.g. remove extra buttons and borders)
+ - Implement Author details fetching
  - Add Scroll/read progress bar
- - ~~Create upload portal~~
-   - ~~Functions to create and parse article elements created with the portal~~ See #1
  - Add Showcase section
  - Add Animations with Framer Motion
-   - ~~Animate on page load~~
+   - Animate on element load
    - Animate nav bar (sliding hover selector)
    - Animate page loading (spinning circle)
    - Animate image loading (placeholder image w/ shimmer)
  - Add Streaming/hydration with Suspense
  - Find a better font
-
- #### Notes
-#1 Replaced with Ghost CMS\
-#2 Minor bugs should be fixed
+ - Shift towards minimalist design for nav bar (e.g. remove extra buttons and borders)
